@@ -11,7 +11,7 @@ connectDB()
 app.use(express.json())
 app.use(express.urlencoded({ extended:false}))
 
-app.use('/travel/api', require('./routes/travelRouter'))
+app.use('/', require('./routes/travelRouter'))
 
 
 const PORT = process.env.PORT || 3000;
